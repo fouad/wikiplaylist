@@ -1,4 +1,4 @@
-# wikiplaylist.com
+# [wikiplaylist.com](https://wikiplaylist.com)
 
 ### Development
 
