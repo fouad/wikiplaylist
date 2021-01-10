@@ -1,4 +1,4 @@
-<p align="center"><img alt="wikiplaylist logo" src="https://wikiplaylist.com/favicon.png" width="150"></p>
+<p align="center"><img alt="wikiplaylist logo" src="https://wikiplaylist.com/favicon.png" width="72"></p>
 <p align="center">
 <strong>Wikiplaylist</strong>
 <br>
