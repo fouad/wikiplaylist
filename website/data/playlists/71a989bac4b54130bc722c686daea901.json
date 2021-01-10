@@ -1,0 +1,46 @@
+{
+  "name": "71a989bac4b54130bc722c686daea901",
+  "displayName": "A History of Tudor England based on Game of Thrones",
+  "props": {
+    "author": "Fouad Matin",
+    "description": "Like many fantasy authors, George R.R. Martin based much of Game of Thrones on medieval European history. The series draws heavily from the War of the Roses, which pitted the Yorks in the North against the Lancasters in the South.",
+    "backgroundImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Family_of_Henry_VIII%2C_an_Allegory_of_the_Tudor_Succession.png/320px-Family_of_Henry_VIII%2C_an_Allegory_of_the_Tudor_Succession.png",
+    "items": [
+      {
+        "displayName": "Inspirations for Game of Thrones",
+        "props": {
+          "image": "https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_title_card.jpg",
+          "href": "https://en.m.wikipedia.org/wiki/Game_of_Thrones#Inspirations_and_derivations"
+        }
+      },
+      {
+        "displayName": "Summary of the War of the Roses",
+        "props": {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Plucking_the_Red_and_White_Roses%2C_by_Henry_Payne.jpg/300px-Plucking_the_Red_and_White_Roses%2C_by_Henry_Payne.jpg",
+          "href": "https://en.m.wikipedia.org/wiki/Wars_of_the_Roses#Summary_of_events"
+        }
+      },
+      {
+        "displayName": "The Wall In the North",
+        "props": {
+          "image": "https://awoiaf.westeros.org/images/6/6b/The_wall_and_Castle_Black_by_Feliche.jpg",
+          "href": "https://en.m.wikipedia.org/wiki/World_of_A_Song_of_Ice_and_Fire#The_Wall"
+        }
+      },
+      {
+        "displayName": "Hadrian's Wall",
+        "props": {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Hadrian%27s_wall_at_Greenhead_Lough.jpg/320px-Hadrian%27s_wall_at_Greenhead_Lough.jpg",
+          "href": "https://en.m.wikipedia.org/wiki/Hadrian%27s_Wall#Purpose_of_construction"
+        }
+      },
+      {
+        "displayName": "Tudor England",
+        "props": {
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Tudor_Rose.svg/240px-Tudor_Rose.svg.png",
+          "href": "https://en.m.wikipedia.org/wiki/Tudor_period#mw-content-text"
+        }
+      }
+    ]
+  }
+}

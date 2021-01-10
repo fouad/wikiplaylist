@@ -1,0 +1,29 @@
+{
+  "name": "wikiplaylist-website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:base-css": "tailwindcss build ./styles/tailwind.base.css -o ./styles/base.css"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "11.0.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "lodash": "^4.17.20",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@emotion/babel-plugin": "11.0.0",
+    "autoprefixer": "10.0.2",
+    "next": "latest",
+    "postcss": "8.1.10",
+    "tailwindcss": "^2.0.1",
+    "xwind": "0.7.2"
+  },
+  "license": "MIT"
+}
