@@ -1,0 +1,34 @@
+{
+  "name": "a86297506cbb454792458a18b03d507a",
+  "displayName": "Originality Protected by Law",
+  "props": {
+    "author": "Fouad Matin",
+    "backgroundImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tissot_The_Creation.jpg/564px-Tissot_The_Creation.jpg",
+    "items": [
+      {
+        "id": 0,
+        "displayName": "Threshold of Originality",
+        "props": {
+          "image": "",
+          "href": "https://en.wikipedia.org/wiki/Threshold_of_originality#History"
+        }
+      },
+      {
+        "id": 1,
+        "displayName": "Lack of Originality",
+        "props": {
+          "image": "",
+          "href": "https://en.wikipedia.org/wiki/Copyright_law_of_Switzerland#Lack_of_originality"
+        }
+      },
+      {
+        "id": 2,
+        "displayName": "Copyright Clause of U.S. Constitution",
+        "props": {
+          "image": "",
+          "href": "https://en.wikipedia.org/wiki/Copyright_Clause#Effect"
+        }
+      }
+    ]
+  }
+}
