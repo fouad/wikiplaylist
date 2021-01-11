@@ -17,7 +17,7 @@ const EditPlaylist = ({ playlist }) => (
         </a>
       </Link>
     </Header>
-    <PlaylistForm playlist={playlist} />
+    <PlaylistForm playlist={playlist} saveAction="edit" />
   </PageContainer>
 )
 

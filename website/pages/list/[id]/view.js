@@ -12,27 +12,9 @@ import { useRouter } from 'next/router'
 const ViewPlaylist = ({ playlist, params, query }) => {
   const router = useRouter()
 
-  if (!playlist) {
-    if (router.query?.draft) {
-      try {
-        let decDraft = atob(router.query?.draft)
-        let result = JSON.parse(decDraft)
-
-        console.log('> decoded draft playlist', result)
-
-        playlist = result.playlist
-      } catch (err) {
-        console.error(err)
-        return <div>hello</div>
-      }
-    } else {
-      return <div>not found!</div>
-    }
-  }
-
-  const [frameSrc, setFrameSrc] = useState('')
-  const [currentStep, setCurrentStep] = useState('')
-  const [sidebarVisible, setSidebarVisibility] = useState(true)
+  const [frameSrc, setFrameSrc] = useState(() => '')
+  const [currentStep, setCurrentStep] = useState(() => '')
+  const [sidebarVisible, setSidebarVisibility] = useState(() => true)
   const onSidebarItemClick = (e) => {
     // If not cmd+click, then don't open the link
     if (!e.metaKey) {
@@ -52,13 +34,31 @@ const ViewPlaylist = ({ playlist, params, query }) => {
     }
   }
 
-  console.log(playlist)
-
   useEffect(() => {
     let first = playlist?.props?.items[0]
     setFrameSrc(first?.props?.href)
-    console.log(first?.props?.href, playlist)
   }, [playlist, router.query.draft]) // TODO: add check for params to jump to linked step
+
+  if (!playlist) {
+    if (router.query?.draft) {
+      try {
+        let decDraft = atob(router.query?.draft)
+        let result = JSON.parse(decDraft)
+
+        playlist = result.playlist
+      } catch (err) {
+        console.error(err)
+        return (
+          <div>
+            error parsing playilist:
+            <pre>{err.toString()}</pre>
+          </div>
+        )
+      }
+    } else {
+      return <div>not found!</div>
+    }
+  }
 
   return (
     <>
@@ -73,7 +73,7 @@ const ViewPlaylist = ({ playlist, params, query }) => {
           </Link>
           <Button
             onClick={() => setSidebarVisibility(!sidebarVisible)}
-            css={xw`inline-block w-auto ml-3 text-blue-600 bg-blue-100 hover:bg-blue-200`}
+            css={xw`hidden md:inline-block w-auto ml-3 text-blue-600 bg-blue-100 hover:bg-blue-200`}
           >
             Toggle Sidebar
           </Button>
@@ -93,6 +93,7 @@ const ViewPlaylist = ({ playlist, params, query }) => {
         curentStep={currentStep}
         visible={sidebarVisible}
         onContentItemClick={onSidebarItemClick}
+        onToggleVisibility={() => setSidebarVisibility(!sidebarVisible)}
       />
     </>
   )

@@ -1,13 +1,19 @@
 import Link from 'next/link'
 
-function LinkIfExists({ href, children }) {
+function LinkIfExists({ anchor = true, className, href, target, children }) {
   if (!href) {
     return <>{children}</>
   }
 
+  if (!anchor) {
+    return <Link href={href}>{children}</Link>
+  }
+
   return (
     <Link href={href}>
-      <a>{children}</a>
+      <a target={target} className={className}>
+        {children}
+      </a>
     </Link>
   )
 }

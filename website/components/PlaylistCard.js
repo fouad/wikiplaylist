@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import xw, { cx } from 'xwind'
 import styled from '@emotion/styled'
 import { PlaylistInfo } from './PlaylistContent'
@@ -51,7 +50,7 @@ export const PlaylistCard = ({
       minWidth: 270,
     }}
   >
-    <LinkIfExists href={href}>
+    <LinkIfExists anchor href={href}>
       <PlaylistCardImageWrapper>
         <PlaylistCardImage
           style={{

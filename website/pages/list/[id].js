@@ -4,7 +4,7 @@ import Button from '../../components/Button'
 import Header from '../../components/Header'
 import PlaylistCard from '../../components/PlaylistCard'
 import PageContainer from '../../components/PageContainer'
-import PlaylistContentItem from '../../components/PlaylistContent'
+import { PlaylistContentList } from '../../components/PlaylistContent'
 import playlistFixture, { PLAYLIST_MAP } from '../../data/playlist-fixture'
 
 const ViewPlaylist = ({ playlist }) => (
@@ -47,11 +47,7 @@ const ViewPlaylist = ({ playlist }) => (
         )}
       </div>
       <div css={xw`col-span-2`}>
-        <div css={xw`border border-gray-200 rounded-md`}>
-          {playlist?.props?.items?.map((item, key) => (
-            <PlaylistContentItem key={key} item={item} />
-          ))}
-        </div>
+        <PlaylistContentList playlist={playlist} />
       </div>
     </div>
   </PageContainer>
