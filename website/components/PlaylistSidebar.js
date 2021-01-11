@@ -5,7 +5,7 @@ import { PlaylistContentItem } from './PlaylistContent'
 const SidebarStyled = styled.div(xw`
   bg-white
   fixed top-0 right-0
-  h-full w-96 py-4
+  h-full w-72 md:w-96 py-4
   transition-transform
   border-l border-gray-200 shadow-lg
 `)

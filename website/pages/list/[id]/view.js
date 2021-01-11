@@ -11,7 +11,6 @@ import { useRouter } from 'next/router'
 
 const ViewPlaylist = ({ playlist, params, query }) => {
   const router = useRouter()
-
   const [frameSrc, setFrameSrc] = useState(() => '')
   const [currentStep, setCurrentStep] = useState(() => '')
   const [sidebarVisible, setSidebarVisibility] = useState(() => true)
@@ -67,7 +66,7 @@ const ViewPlaylist = ({ playlist, params, query }) => {
           <Link href="/">
             <a css={xw`inline-block my-4`}>
               <Button css={xw`text-blue-600 bg-blue-100 hover:bg-blue-200`}>
-                &larr; Home
+                Home
               </Button>
             </a>
           </Link>
